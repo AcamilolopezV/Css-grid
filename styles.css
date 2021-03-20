@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+  --azulOscuro: #303841;
+  --azulClaro: #00adb5;
+  --gris: #eeeeee;
+  --naranja: #ff835e;
+}
+
+body{
+  background: #EFEFBB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.container{
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  height: 100vh;
+}
+
+.item-1{
+  background-color: var(--azulOscuro);
+  grid-column: 2 / 3;
+  grid-row: 3 / 10;
+  border-radius: 10px;
+}
+
+.item-2{
+  background-color: var(--azulClaro);
+  opacity: 0.7;
+  grid-column: 1 / 4;
+  grid-row: 6 / 8;
+  border-radius: 10px;
+}
+
+.item-3{
+  background-color: var(--naranja);
+  grid-column: 5 / 8;
+  grid-row: 5 / 10;
+  border-radius: 10px;
+}
+
+.item-4{
+  border: 5px solid var(--naranja);
+  grid-column: 6 / 9;
+  grid-row: 4 / 8;
+  border-radius: 10px;
+}
+
+.item-5{
+  border: 5px solid var(--naranja);
+  grid-column: 7 / 10;
+  grid-row: 2 / 9;
+  border-radius: 10px;
+}
+
+.item-6{
+  font-size: 3em;
+  color: white;
+  grid-column: 6 / 9;
+  grid-row: 2 / 5;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.item-6 p{
+  margin: 0;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.item-7{
+  background-color: var(--gris);
+  display: grid;
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  border-radius: 10px;
+}
+
+.item-8{
+  font-size: 2em;
+  display: grid;
+  grid-column-start: 4;
+  grid-row: 2 / 4;
+  color:var(--naranja);
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  -webkit-text-stroke: 1px black;
+}
